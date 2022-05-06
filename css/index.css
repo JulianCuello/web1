@@ -10,14 +10,15 @@
  }
 
  p {color: rgb(253, 253, 252);
-text-align:left ;
-font-family:Arial, Helvetica, sans-serif;
-font-style: oblique;
+    text-align:left ;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: oblique;
+
 }
 
 h2 {font-size: 175%;
-color: white;
-font-family:monospace;}
+   color: white;
+   font-family:monospace;}
  
 
  
@@ -31,7 +32,7 @@ font-family:monospace;}
       color:rgb(248, 248, 7);
       justify-content: left;
       display: flex;
-      
+        
  }
  .nav-bar {
     display: flex;
@@ -63,10 +64,7 @@ font-family:monospace;}
     background: rgb(248, 91, 0);
     color :black;
 }
-
- 
-
- img { 
+ .img-running { 
      opacity: 50%;
      border-radius: 50px;
      float: right;
@@ -86,6 +84,49 @@ font-family:monospace;}
  text-align: center;
  }
  td {color: white;}
- body {background-image: url("../images/runners2.jpg");
-background-size: cover;}
 
+ body {background-image: url("../images/runners2.jpg");
+ background-size: cover;}
+
+.form-login {
+
+   width: 400px;
+   height: 340px;    background-color: yellowgreen;
+   margin: auto;
+   margin-top: 180px;
+   box-shadow: 7px 13px 37px #000;
+   padding: 20px 30px;
+   border-top: 4px solid #017bab ;
+   color: white;
+}
+
+h5 {
+   margin: 0;
+   text-align: center;
+   height: 40px;
+   margin-bottom: 30px;
+   border-bottom: 1px;
+   font-size: 20px;
+}
+
+.controls {
+
+    width: 100px;
+    border: 1px solid #017bab ;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: grey;
+    font-size: 14px;
+    font-weight:bold  
+
+}
+
+.buttons {
+
+    width: 100px;
+    height: 40px;
+    background:#017bab ;
+    border:none ;
+    color:blanchedalmon;
+    margin-bottom: 16px;
+}
