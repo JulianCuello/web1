@@ -49,7 +49,7 @@ h2 {font-size: 175%;
     
  }
  .nav-item{
-    background:  rgb(255, 0, 0);
+    background:  cornflowerblue;
     color: white;
     padding: 10px  30px;
     border-radius: 10px;
@@ -61,7 +61,7 @@ h2 {font-size: 175%;
 
 
  .nav-item:hover{
-    background: rgb(248, 91, 0);
+    background: rgb(147, 179, 238);
     color :black;
 }
  .img-running { 
@@ -85,11 +85,16 @@ h2 {font-size: 175%;
  }
  td {color: white;}
 
- body {background-image: url("../images/runners2.jpg");
- background-size: cover; 
+ body {
+   background-image: url("../images/runners2.jpg");
+   background-size: cover; 
 
  }
 
+ .body-login{
+   background-image: url("../images/fondo.jpg");
+   background-size: cover; 
+ }
 
 *{
  margin: 0px;
@@ -100,7 +105,7 @@ h2 {font-size: 175%;
 .Form-login {
 
 width: 400px;
-height: 300px;
+height: 350px;
 background:rgb(54, 49, 49);
 margin: auto;
 margin-top: 180px;
@@ -122,8 +127,8 @@ color:aliceblue
 
 .controls {
 
-   width: 200px;
-   border: 1px solid crimson;
+   width: 375px;
+   border: 1px solid cornflowerblue;
    margin-bottom: 25px;
    padding: 11px 12px;
    background-color: white;
@@ -132,9 +137,9 @@ color:aliceblue
    
 }
 
-.buttons {
+.button {
 
-width:100px;
+width:400px;
 height: 80px;
 background:cornflowerblue;
 border:none ;
@@ -160,7 +165,10 @@ font-size:14px;
 
 text-decoration: underline;
 
-
 }
 
+.form-user-declaracion{ 
+   display: flex; 
+   flex-direction: column;
+}
 
