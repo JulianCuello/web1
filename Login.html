@@ -27,12 +27,31 @@
         </div>
     </nav>
     <section class="Form-login" >
-        <h5> Formulario Login</h5>
-        <input class="controls" type="text" name= "usuario" value="" placeholder="Usuario"> 
-        <input class="controls" type="password" name="Contrasena" value="" placeholder="Usuario">
-        <input class="button2" type="submit" name="" value="ingresar">
+
+         <h5> Formulario Login</h5>
+        <input class="control-login" type="text" name= "usuario" value="" placeholder="Usuario"> 
+        <input class="control-login" type="password" name="Contrasena" value="" placeholder="Contraseña">
+        <div>
+            <p id="captcha">                
+            </p>
+            <input type="text" class="inputCaptcha" id="input-captcha"> 
+            <button type="button" id="generar-captcha">
+                Generar
+            </button>
+            <button type="button" id="validar-captcha">
+                 Validar
+            </button>
+            <p id="respuesta"> 
+            </p>
+         </div>
+        <input class="button-login" type="submit" name="" value="ingresar">
+
+
         <p> <a href="#"> ¿Olvidaste tu contraseña?</a> 
         </p> 
+
+
     </section>
+    <script src="./Login.js"></script>
 </body>
 </html>
