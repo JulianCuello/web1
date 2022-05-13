@@ -321,3 +321,29 @@ border-radius: 25px;
    margin-bottom: 5px;
 
 }
+
+.flexContainer {
+
+   display: flex;
+   flex-direction:row;
+   justify-content: space-around;
+   align-content: flex-end;
+   
+
+   
+}
+
+.flexContainer div {
+
+   font-family: fantasy;
+   font-size: x-large;
+   color: black;
+   line-height: 75px;
+   margin: 10px;
+   width: 40%;
+   height: 40%;
+   text-align: center;
+   border-radius: 15px;
+   opacity: 75%;
+
+}
