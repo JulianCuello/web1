@@ -51,7 +51,7 @@ h2 {
 }
 
 
-.terminosycond li {
+.terminos-y-cond li {
    
    font-size: 130%;
    color: rgb(226, 220, 210);
@@ -61,7 +61,7 @@ h2 {
    margin-right: 10px;
 }
 
-h4 {
+.p {
   
    font-size: 130%;
    color: rgb(226, 220, 210);
@@ -128,7 +128,7 @@ nav {
    color :black;
 }
 
-.terminosycond {
+.terminos-y-cond {
    
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    font-size: large;
