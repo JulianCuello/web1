@@ -145,9 +145,9 @@ nav {
      
    border: 1px solid black;
    font-family: sans-serif;
-   margin-left: 25px;
-   font-size: 25px;
-   margin-top: 10%;
+   margin-left: 15px;
+   font-size: 15px;
+   margin-top: 5%;
 }
 
  .tablehead {
@@ -302,16 +302,6 @@ td {
 
 }
 
-.imgrunning { 
-
-float: right;
-width: 300px ;
-height: 400px;
-margin-right: 40px;
-opacity: 66%;
-border-style: groove;
-border-radius: 25px;
-}
 
 #captcha{ 
    color:blanchedalmond;
@@ -322,28 +312,19 @@ border-radius: 25px;
 
 }
 
-.flexContainer {
 
+footer {
+   background-color:rgb(10, 9, 9);
+   padding: 10px;
+   width: 100%;
    display: flex;
-   flex-direction:row;
-   justify-content: space-around;
-   align-content: flex-end;
+   flex-direction: column;
+   align-items: center;
+ }
+ 
+ .integrantes {
+   display: flex;
+   flex-direction: row;
+   color:  white;
    
-
-   
-}
-
-.flexContainer div {
-
-   font-family: fantasy;
-   font-size: x-large;
-   color: black;
-   line-height: 75px;
-   margin: 10px;
-   width: 40%;
-   height: 40%;
-   text-align: center;
-   border-radius: 15px;
-   opacity: 75%;
-
 }
