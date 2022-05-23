@@ -2,19 +2,12 @@ body {
    
    background-image: url("../images/fondo.jpg");
    background-size: cover; 
-
 }
 
  .body-login {
    
    background-image: url("../images/fondo.jpg");
    background-size: cover; 
-}
-
- .bodydj {
-    
-   background-image: url("../images/fondodj.jpg") ;
-   background-size: cover;
 }
 
  .bodytyc {
@@ -45,7 +38,16 @@ body {
    margin-top: 5%;
    margin-left: 25px;
    margin-right: 400px;
-      
+ }
+
+ .p {
+  
+      font-size: 130%;
+      color: rgb(226, 220, 210);
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin-top: 15px;
+      margin-left: 10px;
+      margin-right: 10px;   
 }
 
 .terminos-y-cond li {
@@ -58,35 +60,12 @@ body {
    margin-right: 10px;
 }
 
-.p {
-  
-   font-size: 130%;
-   color: rgb(226, 220, 210);
-   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   margin-top: 15px;
-   margin-left: 10px;
-   margin-right: 10px;
-}
-
-.navenlace {
-    
-   background:  rgb(255, 0, 0);
-   color: white;
-   padding: 10px  30px;
-   border-radius: 10px;
-   font-family: monospace;
-   text-decoration: none;
-   font-size: 17px;
-    
-}
-
 nav {
    
    background: transparent;
    padding: 10px;
    
 }
-
 
 .nav-bar {
    
@@ -136,7 +115,6 @@ nav {
   
 }
 
-
  table, td, th {
      
    border: 1px solid black;
@@ -164,10 +142,17 @@ td {
 }
 
 
-.estilotabla {
+.estilotabla1 {
   
    background-color:rgb(9, 177, 243);
    font-size: 20px;
+}
+
+.estilotabla2{
+  
+   background-color:rgb(9, 177, 243);
+   font-size: 20px;
+   
 }
 
 .Form-login {
@@ -212,12 +197,7 @@ td {
    text-decoration: underline;
    
 }
-   
-.form-user-declaracion{ 
-   
-   display: flex; 
-   flex-direction: column;
-}
+
 
 .controls {
 
