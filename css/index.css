@@ -72,17 +72,6 @@ nav {
    color :black;
 }
 
-.terminos-y-cond {
-   
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: large;
-   color: whitesmoke;
-   margin: 5%;
-   height: 100px;
-   text-align: left; 
-   justify-content: center;
-  
-}
 
  table, td, th {
      
@@ -115,13 +104,6 @@ td {
   
    background-color:rgb(9, 177, 243);
    font-size: 20px;
-}
-
-.estilotabla2{
-  
-   background-color:rgb(9, 177, 243);
-   font-size: 20px;
-   
 }
 
 .Form-login {
@@ -290,9 +272,6 @@ contenedor {
    border-color: rgb(70, 71, 71);
    background-color: silver;
    width: 70%;
-   height: 25%;
-   font-size: larger;
-   font-family: fantasy;
    text-align: center;
    border-radius: 9%
   }
