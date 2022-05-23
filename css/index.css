@@ -23,7 +23,7 @@ body {
    background-size: cover;
 }
 
- #mainTitle {
+ h1 {
     
     display: flex;
     flex-direction: row;
@@ -36,9 +36,7 @@ body {
     
 }
 
-
-
-h2 {
+.introduccion {
    
    color: rgb(253, 253, 252);
    text-align:left ;
@@ -49,7 +47,6 @@ h2 {
    margin-right: 400px;
       
 }
-
 
 .terminos-y-cond li {
    
@@ -120,7 +117,6 @@ nav {
    font-size: 17px;
    margin-right: 25px;
 }
-
 
 .nav-item:hover {
    
@@ -235,8 +231,6 @@ td {
    margin-left: 65%;
    line-height: 2px;
      
- 
-   
 }
 
 .control-login {
@@ -302,7 +296,6 @@ td {
 
 }
 
-
 #captcha{ 
    color:blanchedalmond;
    width: 150px;
@@ -311,7 +304,6 @@ td {
    margin-bottom: 5px;
 
 }
-
 
 footer {
    background-color:rgb(10, 9, 9);
@@ -326,5 +318,32 @@ footer {
    display: flex;
    flex-direction: row;
    color:  white;
+}
+
+contenedor {
+
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   height: 500px;
+   margin-left: 70%;
+   margin-top: 0%;
+   opacity: 70%;
+   justify-content: space-around;
    
 }
+
+.carreras {
+
+   color: rgb(0, 0, 0);
+   border: 4px;
+   border-style:groove;
+   border-color: rgb(70, 71, 71);
+   background-color: silver;
+   width: 70%;
+   height: 25%;
+   font-size: larger;
+   font-family: fantasy;
+   text-align: center;
+   border-radius: 9%
+  }
