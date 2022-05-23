@@ -17,15 +17,15 @@ body {
     
 }
 
-.introduccion {
+.terminos-y-condiciones , .subtitulo {
    
    color: rgb(253, 253, 252);
-   text-align:left ;
+   text-align:center ;
    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    font-size: 130%;
    margin-top: 5%;
-   margin-left: 25px;
-   margin-right: 400px;
+   margin-left: 5%;
+   margin-right: 5%;
  }
 
 
@@ -243,6 +243,7 @@ footer {
    display: flex;
    flex-direction: column;
    align-items: center;
+   bottom: 0;
  }
  
  .integrantes {
@@ -251,16 +252,13 @@ footer {
    color:  white;
 }
 
-contenedor {
+.contenedor {
 
-   display: flex;
-   flex-direction: column;
+
    flex-wrap: wrap;
-   height: 500px;
-   margin-left: 70%;
-   margin-top: 0%;
    opacity: 70%;
    justify-content: space-around;
+   width: 30%;
    
 }
 
@@ -275,3 +273,27 @@ contenedor {
    text-align: center;
    border-radius: 9%
   }
+
+  .main-div {
+
+   display: inline-flex;
+   
+  }
+  
+.introduccion {
+
+   display: flex;
+   flex-direction: row;
+   color: rgb(253, 253, 252);
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 130%;
+   justify-content: space-around;
+
+
+  
+}
+
+.main {
+
+width: 70%;
+}
