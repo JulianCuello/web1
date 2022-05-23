@@ -4,18 +4,6 @@ body {
    background-size: cover; 
 }
 
- .body-login {
-   
-   background-image: url("../images/fondo.jpg");
-   background-size: cover; 
-}
-
- .bodytyc {
-    
-   background-image: url("../images/fondodj.jpg");
-   background-size: cover;
-}
-
  h1 {
     
     display: flex;
@@ -40,25 +28,6 @@ body {
    margin-right: 400px;
  }
 
- .p {
-  
-      font-size: 130%;
-      color: rgb(226, 220, 210);
-      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      margin-top: 15px;
-      margin-left: 10px;
-      margin-right: 10px;   
-}
-
-.terminos-y-cond li {
-   
-   font-size: 130%;
-   color: rgb(226, 220, 210);
-   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   margin-top: 15px;
-   margin-left: 10px;
-   margin-right: 10px;
-}
 
 nav {
    
