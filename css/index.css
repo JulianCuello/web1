@@ -1,33 +1,15 @@
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: bord;
+
+}
+
 body {
    
    background-image: url("../images/fondo.jpg");
-   background-size: cover; 
+   background-size: cover;
 }
-
- h1 {
-    
-    display: flex;
-    flex-direction: row;
-    color:cornflowerblue;
-    justify-content: center;
-    font-size: 150%;
-    margin-top: 1px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 30px;
-    
-}
-
-.terminos-y-condiciones , .subtitulo {
-   
-   color: rgb(253, 253, 252);
-   text-align:center ;
-   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 130%;
-   margin-top: 5%;
-   margin-left: 5%;
-   margin-right: 5%;
- }
-
 
 nav {
    
@@ -72,8 +54,28 @@ nav {
    color :black;
 }
 
+ h1 {
+    
+    display: flex;
+    flex-direction: row;
+    color:cornflowerblue;
+    justify-content: center;
+    font-size: 150%;
+    margin-top: 1px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 30px;   
+}
 
- table, td, th {
+.main {
+ width: 70%;
+   }
+
+.main-div {
+ display: inline-flex;
+      
+ }
+   
+table, td, th {
      
    border: 1px solid black;
    font-family: sans-serif;
@@ -106,13 +108,66 @@ td {
    font-size: 20px;
 }
 
+.introduccion {
+
+   display: flex;
+   flex-direction: row;
+   color: rgb(253, 253, 252);
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 130%;
+   justify-content: space-around;
+
+}
+
+.carreras {
+
+   color: rgb(0, 0, 0);
+   border: 4px;
+   border-style:groove;
+   border-color: rgb(70, 71, 71);
+   background-color: silver;
+   width: 70%;
+   text-align: center;
+   border-radius: 9%
+  }
+
+.terminos-y-condiciones , .subtitulo {
+   
+   color: rgb(253, 253, 252);
+   text-align:center ;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 130%;
+   margin-top: 5%;
+   margin-left: 5%;
+   margin-right: 5%;
+ }
+
+ .contenedor {
+
+
+   flex-wrap: wrap;
+   opacity: 70%;
+   justify-content: space-around;
+   width: 30%;
+}
+ 
+.claseul {
+
+   color: rgb(253, 253, 252);
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 100%;
+   margin-top: 5%;
+   margin-left: 5%;
+   margin-right: 5%;
+}
+
 .Form-login {
 
    width: 400px;
    height: 350px;
    background:rgb(54, 49, 49);
    margin: auto;
-   margin-top: 180px;
+   margin-top: 80px;
    box-shadow: 7px 13px 37px; color: black;
    padding: 20px 30px;
    border-top: 4px solid cornflowerblue;
@@ -210,12 +265,17 @@ td {
    margin-left: 2%;
 }
 
-* {
-   margin: 0px;
-   padding: 0px;
-   box-sizing: bord;
 
+
+ 
+ .integrantes {
+   display: flex;
+   flex-direction: row;
+   color:  white;
 }
+
+  
+
 
 #captcha{ 
    color:blanchedalmond;
@@ -235,55 +295,3 @@ footer {
    align-items: center;
    bottom: 0;
  }
- 
- .integrantes {
-   display: flex;
-   flex-direction: row;
-   color:  white;
-}
-
-.contenedor {
-
-
-   flex-wrap: wrap;
-   opacity: 70%;
-   justify-content: space-around;
-   width: 30%;
-   
-}
-
-.carreras {
-
-   color: rgb(0, 0, 0);
-   border: 4px;
-   border-style:groove;
-   border-color: rgb(70, 71, 71);
-   background-color: silver;
-   width: 70%;
-   text-align: center;
-   border-radius: 9%
-  }
-
-  .main-div {
-
-   display: inline-flex;
-   
-  }
-  
-.introduccion {
-
-   display: flex;
-   flex-direction: row;
-   color: rgb(253, 253, 252);
-   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 130%;
-   justify-content: space-around;
-
-
-  
-}
-
-.main {
-
-width: 70%;
-}
