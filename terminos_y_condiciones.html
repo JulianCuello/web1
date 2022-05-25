@@ -5,85 +5,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Terminos y condiciones</title>
     <link rel="stylesheet" href="css\index.css">
 
 </head>
 
 <body>
-             
-            <nav class="nav-bar">
+    
+    <header>
+        <nav class="nav-bar">
+                
+                <ul class="nav-group">         
                     
-                    <ul class="nav-group">          
-                        
-                        <li>
-                            <a class="nav-item" href="index.html" class="navenlace"> Inicio</a>
-                        </li>
-                         
-                        <li>
-                             <a class="nav-item" href="inscripcion.html" class="navenlace"> Declaracion jurada</a>
-                        </li>
-                               
-                        <li>
-                             <a class="nav-item" href="terminos_y_condiciones.html" class="navenlace"> Terminos y condiciones</a>
-                        </li>
+                    <a class="nav-item" href="index.html" class="navenlace"> Inicio</a>
+                    <a class="nav-item" href="inscripcion.html" class="navenlace"> Inscripcion</a>
+                    <a class="nav-item" href="terminos_y_ondiciones.html " class="navenlace"> Terminos y condiciones</a>
+                
+                </ul>
+
+                <div>        
+                    <a class="nav-item" href="login.html " class="navenlace"> Login</a>
+                </div>
+        
+        </nav>
+    </header>
+ 
+        <h1> Bienvenidos a Running Tandil</h1>
+
+            <article class="terminos_y_condiciones">
+                
+                <p> Términos y condiciones para la participación en las actividades dirigidas en espacios públicos:
+                    Es requisito para participar en Tandil Corre ser mayor de 18 años.
+                    Proceso de inscripción:
+                    Al acceder al portal de inscripciones se podrá elegir entre la oferta deportiva actual la clase en la cual se desea inscribir. Una vez realizada la selección, a través del botón VER MÁS se podrá acceder a la inscripción y completar el formulario (toda vez que dicha inscripción se encuentre abierta), con los datos personales, adjuntando foto de frente y de dorso de DNI, apto médico vigente y la DECLARACIÓN JURADA EN EL MARCO DE LA EMERGENCIA SANITARIA POR EL VIRUS COVID-19 (Anexo I) firmada.
+                    Al momento de la inscripción, el Usuario asume el compromiso y la responsabilidad de:
+                    No proporcionar información personal falsa ni a nombre de terceros, cada usuario reconoce que toda información que cargue, es exacta, cierta, veraz y actual.
+                    enviar el formulario el Usuario presta consentimiento a que la Subsecretaría de Deportes de GCBA publique imágenes que obtenga en el marco de las actividades deportivas del programa al cual se inscribe con el objeto de ser reproducido y/o publicado exclusivamente con la finalidad de promover las actividades físicas, deportivas, recreativas, sociales y culturales, y fomentar los hábitos saludables, la equidad e inclusión social conforme el art. 53 del CCyCN.
+                    Asimismo, el usuario declara bajo juramento que no posee patología ni impedimento alguno para correr.
+                    Confirmación de inscripción:
+                    La inscripción será confirmada una vez enviado el formulario mediante una leyenda que se visualizará en pantalla, con código asignado al usuario. Además, se podrá descargar el formulario haciendo click en el botón DESCARGAR PDF, por otro lado, el usuario recibirá un correo electrónico a la dirección que haya proporcionado al cargar sus datos personales, en el cuál recibirá la información sobre la actividad a la cual se haya inscripto.
+                </p>
                     
-                    </ul>
-                        <div>        
-                            <a class="nav-item" href="login.html " class="navenlace"> Login</a>
-                    </div>
     
-            </nav>
-
-    <section class="Form-login" >
-
-                <h5> Formulario Login</h5>
-                    <input class="control-login" type="text" name= "usuario" value="" placeholder="Usuario"> 
-                    <input class="control-login" type="password" name="Contrasena" value="" placeholder="Contraseña">
-        
-        <div>
-            
-                <p id="captcha">                
-                </p>
-            
-                <input type="text" class="inputCaptcha" id="input-captcha"> 
-            
-            <button type="button" id="generar-captcha">
-                Generar
-            
-            </button>
-            
-            <button type="button" id="validar-captcha">
-            
-                Validar
-            
-            </button>
-            
-                <p id="respuesta"> 
-                </p>
-
-        </div>
-        
-        <input class="button-login" type="submit" name="" value="ingresar">
-
-             <p> <a href="#"> ¿Olvidaste tu contraseña?</a> 
-            </p> 
-
-    </section>
+            <section class="claseul">
     
-    <footer class="footer">
+                NOMBRE Y APELLIDO/FULL NAME:
+                <input class="controls" type="text" name= "firma" value="" placeholder="Nombre y Apellido">
+            
+                DIRECCION:
+                <input class="controls" type="text" name="Contrasena" value="" placeholder="Direccion. ">
+            
+                NOMBRE CONTACTO DE EMERGENCIA/EMERGENCY CONTACT PERSON:
+                <input class="controls" type="text" name="Contrasena" value="" placeholder="Nombre de contacto de enmergencia/Enmergency contact person:">
+                
+                Número de Dorsal / Bib Number:
+                <input class="controls" type="text" name= "firma" value="" placeholder="Número de Dorsal / Bib Number:">
+            
         
-        <div class="integrantes">
-          <ul>
-             <li>Basterrica Lucas</li>
-             <li>Cuello Julian</li>
-          </ul>
-        </div>
-    
-    </footer>
+                <input class="button" type="submit" name="" value="Enviar">
 
-    <script src="./js/Login.js"></script>
+            </section>
+ 
+        </article>
+        
+        <footer>
+        
+            <div class="integrantes">
+                <ul>
+                    <li>Basterrica Lucas</li>
+                    <li>Cuello Julian</li>
+                </ul>
+            </div>
 
+        </footer>
 </body>
 
 </html>
