@@ -1,15 +1,191 @@
-* {
-   margin: 0px;
-   padding: 0px;
-   box-sizing: bord;
-
-}
-
 body {
    
    background-image: url("../images/fondo.jpg");
-   background-size: cover;
+   background-size: cover; 
 }
+
+ h1 {
+    
+   text-align: center;
+    color:cornflowerblue;
+    font-size: 150%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 30px;
+    
+}
+
+.terminos-y-condiciones , .contenedor_noticia {
+   
+   color: rgb(253, 253, 252);
+   text-align:center ;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 130%;
+   margin-top: 5%;
+   margin-left: 5%;
+   margin-right: 5%;
+ }
+
+ .estilotabla {
+  
+   background-color:rgb(9, 177, 243);
+   font-size: 20px;
+}
+
+table, td, th {
+     
+   border: 1px solid black;
+   font-family: sans-serif;
+   margin-left: 2%;
+   font-size: 90%;
+   margin-top: 5%;
+}
+
+ .tablehead {
+   
+   text-align: center;
+}
+
+.celdas {
+   
+   background-color: rgba(114, 114, 170, 0.5);
+   text-align: center;
+   font-size: 100%;
+}
+
+td {
+    
+   color: white;
+}
+
+.introduccion {
+
+   display: flex;
+   flex-direction: row;
+   color: rgb(253, 253, 252);
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 120%;
+   padding: 2%;
+}
+
+.main {
+   width: 70%;
+}
+
+.contenedor {
+   display: flex;
+   flex-direction: column;
+   justify-content:end;
+   opacity: 70%;
+   
+}
+
+.carreras {
+   color: rgb(8, 236, 198);
+   border: 4px;
+   border-style:groove;
+   border-color: rgb(11, 90, 236);
+   background-color: rgb(6, 8, 20);
+   width: 70%;
+   height: 30%;
+   text-align: center;
+}
+
+.Form-login {
+
+   width: 400px;
+   height: 350px;
+   background:rgb(54, 49, 49);
+   margin: auto;
+   margin-top: 180px;
+   box-shadow: 7px 13px 37px; color: black;
+   padding: 20px 30px;
+   border-top: 4px solid cornflowerblue;
+   color:aliceblue
+}
+
+.Form-login h5 {
+
+   margin: 0%;
+   text-align: center;
+   height: 40px;
+   margin-bottom: 38px;
+   border-bottom: 1px solid;
+   font-size: 20px;
+}
+
+.Form-login p {
+
+   height: 40px;
+   text-align: center;
+   border-bottom: 1px solid;
+}
+   
+.Form-login a {
+   
+   color: white;
+   text-decoration: none;
+   font-size:14px;
+}
+   
+.Form-login a:hover { 
+   
+   text-decoration: underline;
+   
+}
+
+.controls {
+
+   width: 375px;
+   border: 1px solid rgb(12, 240, 190);
+   margin-bottom: 25px;
+   padding: 11px 12px;
+   background-color: white;
+   font-size: 14px;
+   font-weight: bold;
+   margin-left: 65%;
+   line-height: 2px;
+     
+}
+
+.control-login {
+
+   width: 375px;
+   border: 1px solid rgb(12, 240, 190);
+   margin-bottom: 25px;
+   padding: 11px 12px;
+   background-color: white;
+   font-size: 14px;
+   font-weight: bold;
+   line-height: 2px;
+     
+}
+
+#captcha{ 
+   color:blanchedalmond;
+   width: 150px;
+   font-size: 30px;
+   font-weight: bold;
+   margin-bottom: 5px;
+
+}
+
+.button-login {
+   
+   width:100%;
+   height: 50px;
+   background:rgb(31, 98, 224);
+   color:beige;
+   margin-bottom: 16px;
+   border-radius: 5px;
+   
+}
+
+.claseul {
+
+   color: white;
+   margin-top: 20px;
+}
+
 
 nav {
    
@@ -54,183 +230,7 @@ nav {
    color :black;
 }
 
- h1 {
-    
-    display: flex;
-    flex-direction: row;
-    color:cornflowerblue;
-    justify-content: center;
-    font-size: 150%;
-    margin-top: 1px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 30px;   
-}
 
-.main {
- width: 70%;
-   }
-
-.main-div {
- display: inline-flex;
-      
- }
-   
-table, td, th {
-     
-   border: 1px solid black;
-   font-family: sans-serif;
-   margin-left: 15px;
-   font-size: 15px;
-   margin-top: 5%;
-}
-
- .tablehead {
-   
-   text-align: center;
-}
-
-.celdas {
-   
-   background-color: rgba(114, 114, 170, 0.5);
-   text-align: center;
-   font-size: 120%;
-}
-
-td {
-    
-   color: white;
-}
-
-
-.estilotabla1 {
-  
-   background-color:rgb(9, 177, 243);
-   font-size: 20px;
-}
-
-.introduccion {
-
-   display: flex;
-   flex-direction: row;
-   color: rgb(253, 253, 252);
-   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 130%;
-   justify-content: space-around;
-
-}
-
-.carreras {
-
-   color: rgb(0, 0, 0);
-   border: 4px;
-   border-style:groove;
-   border-color: rgb(70, 71, 71);
-   background-color: silver;
-   width: 70%;
-   text-align: center;
-   border-radius: 9%
-  }
-
-.terminos-y-condiciones , .subtitulo {
-   
-   color: rgb(253, 253, 252);
-   text-align:center ;
-   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 130%;
-   margin-top: 5%;
-   margin-left: 5%;
-   margin-right: 5%;
- }
-
- .contenedor {
-
-
-   flex-wrap: wrap;
-   opacity: 70%;
-   justify-content: space-around;
-   width: 30%;
-}
- 
-.claseul {
-
-   color: rgb(253, 253, 252);
-   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 100%;
-   margin-top: 5%;
-   margin-left: 5%;
-   margin-right: 5%;
-}
-
-.Form-login {
-
-   width: 400px;
-   height: 350px;
-   background:rgb(54, 49, 49);
-   margin: auto;
-   margin-top: 80px;
-   box-shadow: 7px 13px 37px; color: black;
-   padding: 20px 30px;
-   border-top: 4px solid cornflowerblue;
-   color:aliceblue
-}
-
-.Form-login h5 {
-
-   margin: 0%;
-   text-align: center;
-   height: 40px;
-   margin-bottom: 38px;
-   border-bottom: 1px solid;
-   font-size: 20px;
-}
-
-.Form-login p {
-
-   height: 40px;
-   text-align: center;
-   border-bottom: 1px solid;
-}
-   
-.Form-login a {
-   
-   color: white;
-   text-decoration: none;
-   font-size:14px;
-}
-   
-.Form-login a:hover { 
-   
-   text-decoration: underline;
-   
-}
-
-
-.controls {
-
-   width: 375px;
-   border: 1px solid rgb(12, 240, 190);
-   margin-bottom: 25px;
-   padding: 11px 12px;
-   background-color: white;
-   font-size: 14px;
-   font-weight: bold;
-   margin-left: 65%;
-   line-height: 2px;
-     
-}
-
-.control-login {
-
-   width: 375px;
-   border: 1px solid rgb(12, 240, 190);
-   margin-bottom: 25px;
-   padding: 11px 12px;
-   background-color: white;
-   font-size: 14px;
-   font-weight: bold;
-   line-height: 2px;
-     
-}
 
 .button {
 
@@ -243,16 +243,7 @@ td {
    border-radius: 15px;
 }
    
-.button-login {
-   
-   width:100%;
-   height: 50px;
-   background:rgb(31, 98, 224);
-   color:beige;
-   margin-bottom: 16px;
-   border-radius: 5px;
-   
-}
+
    
 .claselist {
    
@@ -265,33 +256,37 @@ td {
    margin-left: 2%;
 }
 
-
-
- 
- .integrantes {
-   display: flex;
-   flex-direction: row;
-   color:  white;
-}
-
-  
-
-
-#captcha{ 
-   color:blanchedalmond;
-   width: 150px;
-   font-size: 30px;
-   font-weight: bold;
-   margin-bottom: 5px;
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: bord;
 
 }
+
+
 
 footer {
    background-color:rgb(10, 9, 9);
    padding: 10px;
    width: 100%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+   position: absolute;
    bottom: 0;
+   width: 100%;
+ 
  }
+ 
+ .integrantes {
+
+   color:  white;
+   text-align: center;
+}
+
+
+
+  .main-div {
+
+   display: inline-flex;
+   
+  }
+  
+
