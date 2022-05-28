@@ -17,7 +17,7 @@
 }
 
 .navbar { 
-  background-color: orange;
+  background-color: rgb(36, 34, 32);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,12 +31,16 @@
  
 }
 
-.nav-Button {
+.nav-button {
   
-  background:  cornflowerblue;
-  color: white;  
-  font-family: monospace;
-  text-decoration: none;
+   background:  cornflowerblue;
+   color: rgb(250, 250, 250);
+   padding: 2px  6px;
+   border-radius: 10px;
+   font-family: monospace;
+   text-decoration: none;
+   font-size: 17px;
+   margin-right: 25px;
  
 }
 
@@ -72,7 +76,6 @@ table, td, th {
   color: black;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 100%;
-  width: 50%;
 }
 
 .main {
@@ -84,7 +87,9 @@ table, td, th {
    }
    .lista-participantes {
   
-    background-color: pink;
+    background-color: rgb(255, 255, 255);
+    font-size: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 .integrantes {
   grid-area: footer;
@@ -240,10 +245,28 @@ table, td, th {
 @media (min-width: 600px) {
   
   /* DESKTOP */
-    .grid-container {
+ 
+  
+  .div_parrafo_indx {
+
+   color: rgb(255, 255, 255);
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 100%;
+ }
+  
+  .div_intro_y_tabla {
+
+   background-color: black;
+   color: white;
+   border-style: inset;
+   border-color: rgb(252, 252, 255);
+   padding: 20px;
+  }
+  
+  .grid-container {
       display: grid;
       background-color: goldenrod;
-      background-size: cover;
+      background-image: cover;
       grid-template-areas:
       " header header header"      
       " main main main"
@@ -251,8 +274,17 @@ table, td, th {
       }
     
       .header { grid-area: header; }
-       main { grid-area: main; }
-      .integrantes { grid-area: footer; }
+       main { grid-area: main; 
+      }
+      
+      .integrantes { grid-area: footer; 
+            
+            background-color: black;
+            width: 100%;
+            color:blanchedalmond;
+            border-style:outset;
+            border-color: rgb(68, 67, 67);
+      }
 
       .header {
         
@@ -264,7 +296,7 @@ table, td, th {
     }
 
     .navbar {     
-      background-color: orange;
+      background-color: rgb(41, 40, 40);
     }
 
     .nav-group { 
@@ -279,7 +311,7 @@ table, td, th {
 
       background:  cornflowerblue;
       color: white;
-      padding: 10px  30px;
+      padding: 5px  10px;
       border-radius: 10px;
       font-family: monospace;
       text-decoration: none;
@@ -300,25 +332,45 @@ table, td, th {
       flex-direction: row;
       
       }
-    .contenido{      
-      background-color: goldenrod;
-      
-      color: black;
+    
+      .contenido{      
+      background-color: rgb(0, 0, 0);
+      color: white;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 100%;
       display:grid;
       grid-template-columns: 2;
     }
+    
     aside {      
       background-color: pink;
     }
 
-    .contenedor-carreras, .lista-participantes{
+    .lista-participantes{
+      
       width: 100%;
       grid-area: 1/2;
       display: flex;
       flex-direction: column;
       align-items: center;
+      border-style: inset;
+      border-color: white;
+      padding: 20px;
+      color:black;
       
     }
+
+    .contenedor-carreras {
+
+      width: 100%;
+      grid-area: 1/2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: black;
+      
+    }
+
     .carreras {
       color: rgb(8, 236, 198);
       border: 4px;
@@ -328,6 +380,16 @@ table, td, th {
       width: 100%;              
       text-align: center;
    }
+
+    .requisitos {
+
+      background-color: white;
+      color: black;
+      font-size: 100%;  
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+    
     .integrantes {
      
       background-color: black;
@@ -348,16 +410,7 @@ table, td, th {
       margin-left: 2%;
    }
   
-   .introduccion {
-   
-      display: flex;
-      flex-direction: row;
-      color: yellow
-      /*font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-size: 100%;
-      padding: 2%;*/
-   }
-   
+
    .Form-login {
    
       width: 400px;
@@ -427,6 +480,16 @@ table, td, th {
         
    }
    
+   
+   .terms-cond {
+ 
+      color: rgb(255, 255, 255);
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 100%;
+      padding: 2%;
+   
+   }
+   
    .button-login {
       
       width:100%;
@@ -457,6 +520,11 @@ table, td, th {
       margin-bottom: 5px;
    }
 
+}
+
+.body_login {
+
+background-image: url(../images/fondo.jpg);
 }
 
    
