@@ -14,16 +14,14 @@
    
     <header class= "header">
       <h1> Bienvenidos a Running Tandil</h1>
-     
+      <button  class="btn-menu">Menu</button>
       <nav class="navbar">
         <ul class="nav-group">
-          <a  href="index.html" ><button class="nav-button"> Inicio</button></a>
-          <a href="inscripcion.html" > <button class="nav-button">Inscripcion</button></a>
-          <a  href="terminos_y_condiciones.html" ><button class="nav-button"> Terminos y condiciones</button></a>
+          <li> <button class="nav-button"> <a  href="index.html" > Inicio </a> </button></li>
+          <li> <button class="nav-button"> <a  href="inscripcion.html" > Inscripcion </a> </button></li>
+          <li> <button class="nav-button"> <a  href="terminos_y_condiciones.html" > terminos y condiciones </a> </button></li>
+          <li> <button class="nav-button"> <a  href="Login.html" > login </a> </button></li>
         </ul>
-        <div>
-          <a  href="login.html "> <button class="nav-button">Login</button></a>
-        </div>
       </nav>
   </header>
 
@@ -39,7 +37,9 @@
                 <thead class="estilotabla">
                   <tr>
                     <th class="tablehead">Distancia</th>
-                    <th class="tablehead">tiempo estimado</th>
+                    <th class="tablehead">Tiempo estimado</th>
+                    <th class="tablehead">Record</th>
+                    <th class="tablehead">Premios</th>
                   </tr>
                 </thead>
                 <tr>
@@ -49,6 +49,12 @@
                   <td class="celdas">
                     <b>30 min</b>
                   </td>
+                  <td class="celdas">
+                    <b> 22 min </b>
+                  </td>
+                  <td class="celdas">
+                    <b> 10.000 </b>
+                  </td>
                 </tr>
                 <tr>
                   <td class="celdas">
@@ -56,6 +62,12 @@
                   </td>
                   <td class="celdas">
                     <b>40 min</b>
+                  </td>
+                  <td class="celdas">
+                    <b> 30 min </b>
+                  </td>
+                  <td class="celdas">
+                    <b> 25.000 </b>
                   </td>
                 </tr>
                 <tr>
@@ -65,6 +77,12 @@
                   <td class="celdas">
                     <b>90 min</b>
                   </td> 
+                  <td class="celdas">
+                    <b> 84 min </b>
+                  </td>
+                  <td class="celdas">
+                    <b> 100.000 </b>
+                  </td>
                 </tr>
                 <tr>
                   <td class="celdas">
@@ -72,6 +90,12 @@
                   </td>
                   <td class="celdas">
                     <b>(Distribuido en 2 dias. 90 min por dia)</b>
+                  </td>
+                  <td class="celdas">
+                    <b> 172 min </b>
+                  </td>
+                  <td class="celdas">
+                    <b> 250.000 </b>
                   </td>
                 </tr>
               </table>
@@ -108,5 +132,6 @@
           </ul>
       </footer>
     </div>
+    <script src="js/menu.js"></script>
   </body>
 </html>
