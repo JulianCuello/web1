@@ -24,4 +24,5 @@ function validarCaptcha () {
         respuesta.innerHTML = "Correcto" //.innerHTML se refiere a lo que tenga entre los tag 
     }  
     else {respuesta.innerHTML=  "Error"} 
-}
+};
+

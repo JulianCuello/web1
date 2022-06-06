@@ -17,18 +17,24 @@
 }
 
 .navbar { 
-  background-color: rgb(36, 34, 32);
+  background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .nav-group { 
   
-  display: flex;
+  display: none;
   flex-direction: column;
   list-style: none;
- 
+}
+
+
+.nav-group.show {
+display: flex;
+flex-direction: column;
 }
 
 .nav-button {
@@ -41,7 +47,16 @@
    text-decoration: none;
    font-size: 17px;
    margin-right: 25px;
- 
+   
+  }
+
+.nav-button a {
+
+   text-decoration: none;
+   }
+
+.nav-button a:visited {
+      color: rgb(250, 250, 250);
 }
 
 .estilotabla {
@@ -82,15 +97,25 @@ table, td, th {
    grid-area: main;
    display: flex;
    flex-direction: column;
-   background-color: red;
-   
    }
-   .lista-participantes {
+   
+
+.img { 
+
+  width: 100px;
+  margin-left: 30px;
+  height: 100px; 
+
+}
+
+.lista-participantes {
   
     background-color: rgb(255, 255, 255);
     font-size: 100%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
+
+
 .integrantes {
   grid-area: footer;
   background-color: black;
@@ -238,13 +263,32 @@ table, td, th {
      font-weight: bold;
      margin-bottom: 5px;
   }
-  
+
+  .btn-menu {
+   
+   display: flex;
+   justify-content: space-evenly;
+   font-family: emoji;
+   color: rgb(255, 255, 255);
+   font-size: medium;
+   background-color: cornflowerblue;
+   width: 25%;
+   padding: 10px;
+   
+  }
+
 /* MOBILE*/
 
 
 @media (min-width: 600px) {
   
   /* DESKTOP */
+
+  .btn-menu {
+   display: none;
+
+}
+
  
   
   .div_parrafo_indx {
@@ -265,7 +309,6 @@ table, td, th {
   
   .grid-container {
       display: grid;
-      background-color: goldenrod;
       background-image: cover;
       grid-template-areas:
       " header header header"      
@@ -299,6 +342,8 @@ table, td, th {
       background-color: rgb(41, 40, 40);
     }
 
+
+    
     .nav-group { 
       display: flex;
       flex-direction: row;
@@ -307,6 +352,7 @@ table, td, th {
       margin-top: 15px;
     }
 
+   
     .nav-button {
 
       background:  cornflowerblue;
@@ -327,7 +373,6 @@ table, td, th {
 
     main {
       
-      background-color: red;
       display: flex;
       flex-direction: row;
       
