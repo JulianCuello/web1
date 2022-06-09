@@ -286,6 +286,9 @@
    border-color: rgb(252, 252, 255);
    padding: 20px;
   }
+  .filaResaltada{
+     background-color: gold;
+  }
   
   .grid-container {
       display: grid;
