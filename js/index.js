@@ -9,8 +9,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
     document.querySelector(".btn-menu").addEventListener("click", toggleMenu);
     /*MENU DESPLEGABLE*/
 
-    /*TABLA DINAMICA*/
+    /*TABLA DINAMICA SPA*/
+    
+    const url = 'https://62bdfbb9c5ad14c110c9fe86.mockapi.io/api/running/carreras';
 
+    /*
     let tabla = document.querySelector("#tabla_dinamica");
 
     let jsonCarreras = [{
@@ -141,10 +144,13 @@ function agregarx3(){
         i++;
     }
     mostrarTabla();
-    }
+  }
+  */
+
+
 })
 
- /* MENU DESPLEGABLE */
+
 
 
 

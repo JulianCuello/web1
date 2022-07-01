@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Running Tandil</title>
     <link rel="stylesheet" href="css\index.css">
-    <script src="./js/index.js"></script>
+    <script src="./js/tablaDinamica.js"></script>
   </head>
   
   <body>
@@ -29,8 +29,6 @@
 
       <main>
 
-    
-
         <article class= "contenido_index">
 
           <img src="./images/varios corriendo.jpg" alt="varios_corriendo" class="imgRunning">
@@ -47,6 +45,9 @@
                       <th class="tablehead">Tiempo estimado</th>
                       <th class="tablehead">Record</th>
                       <th class="tablehead">Premios</th>
+                      <th class="tablehead">Ciudad</th>
+                      <th class="tablehead">Botones</th>
+                      
                     </tr>
                   </thead>
                 <tbody id="tabla_dinamica">
@@ -65,6 +66,8 @@
                     <input type="text" class="inputTabla" id="input_Record">
                     <label for=""> Premios</label>
                     <input type="text" class="inputTabla" id="input_Premios">
+                    <label for=""> Ciudad</label>
+                    <input type="text" class="inputTabla" id="input_Ciudad">
                   </form>
                   <button type="button" id="buttonAgregar">
                     Agregar
