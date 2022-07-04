@@ -54,9 +54,11 @@
 
                 </tbody>
                   
+                  <button id="retrocederPagina"> retroceder pagina</button>
+                  <button id="avanzarPagina">avanzar pagina</button>
                 </table>
               </div>
-              <div>
+              <div class="forms">
                   <form  class="formTabla">
                     <label for="">Distancia(Km) </label>
                     <input type="text"  class="inputTabla" id="input_Distancia"> 
@@ -68,19 +70,30 @@
                     <input type="text" class="inputTabla" id="input_Premios">
                     <label for=""> Ciudad</label>
                     <input type="text" class="inputTabla" id="input_Ciudad">
-                  </form>
-                  <button type="button" id="buttonAgregar">
-                    Agregar
-                  </button>
-                  <button type="button" id="buttonBorrar">
-                    Borrar
-                  </button>
-                  <button type="button" id="buttonAgregar_xtres">
-                    Agregar 3
-                  </button>
-                  <button type="button" id="buttonBorrar_ultimo">
-                    Borrar ultimo
-                  </button>
+                    <button type="button" id="buttonAgregar">
+                      Agregar
+                    </button>
+        
+                    <button type="button" id="buttonAgregar_xtres">
+                      Agregar 3
+                    </button>
+                  </form> 
+                  
+                  
+                  <form  class="formTablaEditar">
+                    <label for="">Distancia(Km) </label>
+                    <input type="text"  class="inputTabla" id="editarInput_Distancia"> 
+                    <label for="">Tiempo estimado</label>
+                    <input type="text" class="inputTabla" id="editarInput_Tiempo">
+                    <label for=""> Record</label>
+                    <input type="text" class="inputTabla" id="editarInput_Record">
+                    <label for=""> Premios</label>
+                    <input type="text" class="inputTabla" id="editarInput_Premios">
+                    <label for=""> Ciudad</label>
+                    <input type="text" class="inputTabla" id="editarInput_Ciudad">
+                    <button type="button"id="buttonAceptarCambios">Aceptar Cambios</button>
+                  </form> 
+                
 
               </div>            
             </div>

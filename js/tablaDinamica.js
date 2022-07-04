@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     
     async function obtenerDatos(){
         try{
-            let res = await fetch(url); //obtengo los datos de la url
+            let res = await fetch(`${url}/?p=1&l=10`); //obtengo los datos de la url
             let carreras = await res.json();
             console.log(carreras);        
             mostrarTabla(carreras);      
@@ -54,7 +54,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
                     <b> ${ciudad} </b>
                     </td>
                     <td class="celdas" data-objectId="${carrera.id}">
-                    <button id = "botonBorrarCelda" class="borrarCarrera"> Borrar </button>
+                    <button class="borrarCarrera"> Borrar </button>
+                    <button class="editarCarrera"> Editar </button>
+                    
                     </td>
               </tr>
               `
@@ -77,7 +79,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
                   <b> ${ciudad} </b>
                 </td>
                 <td class="celdas" data-objectId="${carrera.id}">
-                    <button type="button" class="borrarCarrera"> Borrar </button>
+                    <button class="borrarCarrera"> Borrar </button>
+                    <button class="editarCarrera"> Editar </button>
                 </td>
               </tr>
 
@@ -85,6 +88,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
           }
         }
         agregarEventoBorrar();
+        agregarEventoEditar();
       }
 
       let buttonAgregar = document.querySelector ("#buttonAgregar");
@@ -128,8 +132,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     
 
     function agregarEventoBorrar(){
-        let btnBorrarCarrera = document.querySelectorAll(".borrarCarrera");
-        console.log('AAAAAAAAAA')
+        let btnBorrarCarrera = document.querySelectorAll(".borrarCarrera");        
         btnBorrarCarrera.forEach(boton => {            
             boton.addEventListener("click", borrar);      
             
@@ -154,5 +157,90 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
         obtenerDatos();                  
     }
+
+  
+    function agregarEventoEditar(){
+    let btnEditar = document.querySelectorAll(".editarCarrera");
+      btnEditar.forEach(boton => {            
+      boton.addEventListener("click", mostrarFormEditar);    
+
+    });
+    }
+    function mostrarFormEditar(event){
+      document.querySelector(".formTablaEditar").classList.toggle("mostrarFormEditar");
+
+      let id = event.target.parentNode.getAttribute("data-objectId");
+      
+      let botonAceptarCambios = document.querySelector("#buttonAceptarCambios");
+        botonAceptarCambios.setAttribute("data-id", id)     
+        botonAceptarCambios.addEventListener("click", editarCarrera );
+    }
+
+    async function editarCarrera (event) {
+      
+    let id = event.target.getAttribute("data-id");
+      
+     let carreraEditada = {
+      distancia: document.querySelector ("#editarInput_Distancia").value,
+      tiempoEstimado: document.querySelector ("#editarInput_Tiempo").value,
+      record: document.querySelector ("#editarInput_Record").value,
+      premios: document.querySelector ("#editarInput_Premios").value,
+      ciudad: document.querySelector ("#editarInput_Ciudad").value
+     }
+     console.log(carreraEditada)
+      try{
+        let put = await fetch(`${url}/${id}`,{
+            'method' : 'PUT',
+            'headers': {'Content-Type' : 'application/json'},
+            'body' : JSON.stringify(carreraEditada)
+        })
+      }
+      catch(e){
+          console.log(e)
+      }
+      document.querySelector(".formTablaEditar").classList.toggle("mostrarFormEditar");
+      obtenerDatos();
+
+      
+
+    }
+    let btnpag = document.querySelector("#avanzarPagina")
+    btnpag.addEventListener("click", paginar)
+    let i = 1;
+    async function paginar(){
+      if(i > 0) {
+      i++; 
+      }   
+      
+      try{
+        let res = await fetch(`${url}/?p=${i}&l=10`); //obtengo los datos de la url
+        let carreras = await res.json();
+               
+        mostrarTabla(carreras);      
+        
+    }catch (error){
+        console.log("e");
+    }  
+
+    }
+    let btnpagRetroceder = document.querySelector("#retrocederPagina")
+    btnpagRetroceder.addEventListener("click", retrocederPag)
+    async function retrocederPag(){
+      if(i > 1) {
+        i--; 
+        }     
+      
+      try{
+        let res = await fetch(`${url}/?p=${i}&l=10`); //obtengo los datos de la url
+        let carreras = await res.json();
+               
+        mostrarTabla(carreras);      
+        
+    }catch (error){
+        console.log("e");
+    }  
+
+    }
+
 
 })
