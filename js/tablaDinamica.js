@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                     <td class="celdas" data-objectId="${carrera.id}">
                     <button class="borrarCarrera"> Borrar </button>
                     <button class="editarCarrera"> Editar </button>
+                    <button class="buttonAgregar_xtres"> agregarX3 </button>
                     
                     </td>
               </tr>
@@ -81,6 +82,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 <td class="celdas" data-objectId="${carrera.id}">
                     <button class="borrarCarrera"> Borrar </button>
                     <button class="editarCarrera"> Editar </button>
+                    <button class="buttonAgregar_xtres"> agregarX3 </button>
                 </td>
               </tr>
 
@@ -134,8 +136,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     function agregarEventoBorrar(){
         let btnBorrarCarrera = document.querySelectorAll(".borrarCarrera");        
         btnBorrarCarrera.forEach(boton => {            
-            boton.addEventListener("click", borrar);      
-            
+            boton.addEventListener("click", borrar);       
         });
     }
     
@@ -158,7 +159,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
         obtenerDatos();                  
     }
 
-  
     function agregarEventoEditar(){
     let btnEditar = document.querySelectorAll(".editarCarrera");
       btnEditar.forEach(boton => {            
@@ -188,6 +188,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
       ciudad: document.querySelector ("#editarInput_Ciudad").value
      }
      console.log(carreraEditada)
+
       try{
         let put = await fetch(`${url}/${id}`,{
             'method' : 'PUT',
@@ -200,8 +201,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
       }
       document.querySelector(".formTablaEditar").classList.toggle("mostrarFormEditar");
       obtenerDatos();
-
-      
 
     }
     let btnpag = document.querySelector("#avanzarPagina")
@@ -242,5 +241,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     }
 
+    let btnagregarX3 = document.querySelector(".buttonAgregar_xtres")
+    btnagregarX3.addEventListener("click", btnagregarX3)
 
+   
 })
