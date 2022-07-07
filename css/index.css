@@ -88,12 +88,24 @@
       width: 65%;
 
    }
+   .formTablaEditar{
+      display: none;
+   }
+   .mostrarFormEditar{
+      display: flex;
+      flex-direction: column;
+      width: 65%;
+      
+   }
+   .div_tabla{
+      width: 50%;
+   }
 
    .inputTabla {
 
       width:100%;
       height: 30px;
-      color:beige;
+      color:rgb(7, 7, 6);
     }
 
     #buttonAgregar {
@@ -109,7 +121,7 @@
 
     }
 
-    #buttonAceptarCambios, #avanzarPagina, #retrocederPagina, #buttonBorrar,.buttonAgregar_xtres, .borrarCarrera,  .editarCarrera {
+    #buttonAceptarCambios, #buttonAgregarTres, #avanzarPagina, #retrocederPagina, #buttonBorrar,.buttonAgregar_xtres, .borrarCarrera,  .editarCarrera {
 
       background:  cornflowerblue;
       color: rgb(250, 250, 250);
@@ -185,11 +197,14 @@
          font-size: 100%;
          padding: 2%;
       }
+      .inscripcion{
+         background-color: brown;
+      }
       
       .Form-login {
       
          width: 75%;
-         
+         grid-area: 2/1;
          background:rgb(54, 49, 49);
          margin: auto;
          margin-top: 60px;
@@ -296,6 +311,7 @@
      grid-area: 3/1;     
      background-color: black;     
      color:blanchedalmond;
+     
      }
 
 
@@ -332,36 +348,30 @@
   }
   
   .grid-container {
+      height: 100%;
       display: grid;
       background-image: cover;
-      grid-template-areas:
+      /*grid-template-areas:
       " header header header"      
       " main main main"
       " footer footer footer"
-      }
+      }*/
+      grid-template-rows: 3;
+   }
     
-      .header { grid-area: header; }
-       main { grid-area: main; 
-      }
+   .header { grid-area: 1/1; }
+   main { grid-area: 2/1; }
+   .integrantes{ grid-area: 3/1}
+     
+   
+   .header {
       
-      .integrantes {
-            grid-area: footer;                      
-            color:blanchedalmond;
-            border-style:outset;
-            border-color: rgb(68, 67, 67);
-            background-color: black;
-            width: 100%;
-            height: 100%;           
-            bottom: 0;
-      }
-
-      .header {
-        
-        background-color: black;
-        display: flex;
-        flex-direction: column;
-        color:white
-      
+      text-align: center;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      color:white
+         
     }
 
     .navbar {     
@@ -398,18 +408,22 @@
     }   
 
     main {
-      
+      height: 100%;
       display: flex;
       flex-direction: row;
-      
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 100%;
+      background-color: rgb(0, 0, 0);
       }
     
       .contenido{      
+      padding-bottom: 30px;
       background-color: rgb(0, 0, 0);
       color: white;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-size: 100%;
       display:grid;
+      height: fit-content;
       grid-template-columns: 2;
     }
     .contenido_index{
@@ -474,7 +488,7 @@
 
     }
 
-    #buttonAceptarCambios, #avanzarPagina, #retrocederPagina, #buttonBorrar,.buttonAgregar_xtres, .borrarCarrera,  .editarCarrera {
+    #buttonAceptarCambios, #buttonAgregarTres, #avanzarPagina, #retrocederPagina, #buttonBorrar,.buttonAgregar_xtres, .borrarCarrera,  .editarCarrera {
 
       background:  cornflowerblue;
       color: rgb(250, 250, 250);
@@ -622,6 +636,17 @@
       border-radius: 15px;
    }
    
+   .integrantes {
+      padding-top: 80px;     
+      margin-top: 5%;          
+      color:blanchedalmond;
+      border-style:outset;
+      border-color: rgb(68, 67, 67);
+      background-color: black;
+      width: 100%;
+      
+      }
+
     #captcha{ 
       color:blanchedalmond;
       width: 150px;
@@ -646,16 +671,14 @@
    .mostrarFormEditar{
       display: flex;
       flex-direction: column;
-      width: 25%;
-      
+      width: 25%;      
    }
-   
+   .body_login {
 
+      background-image: url(../images/fondo.jpg);
+      }
 }
 
-.body_login {
 
-background-image: url(../images/fondo.jpg);
-}
 
    

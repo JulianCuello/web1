@@ -130,7 +130,8 @@ mostrarTabla();
 
 function agregarx3(){
     
-    let i=0
+    
+let i=0
     while (i<3){ 
         let carreraNueva = 
         {
@@ -139,7 +140,6 @@ function agregarx3(){
         record: Math.floor(Math.random() * 500) + "min",
         premios: "$" + Math.floor(Math.random() * 100000)
         }
-
         jsonCarreras.push(carreraNueva);
         i++;
     }

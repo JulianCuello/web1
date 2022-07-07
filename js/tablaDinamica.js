@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         try{
             let res = await fetch(`${url}/?p=1&l=10`); //obtengo los datos de la url
             let carreras = await res.json();
-            console.log(carreras);        
+                    
             mostrarTabla(carreras);      
             
         }catch (error){
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                     <td class="celdas" data-objectId="${carrera.id}">
                     <button class="borrarCarrera"> Borrar </button>
                     <button class="editarCarrera"> Editar </button>
-                    <button class="buttonAgregar_xtres"> agregarX3 </button>
+                    
                     
                     </td>
               </tr>
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 <td class="celdas" data-objectId="${carrera.id}">
                     <button class="borrarCarrera"> Borrar </button>
                     <button class="editarCarrera"> Editar </button>
-                    <button class="buttonAgregar_xtres"> agregarX3 </button>
+                    
                 </td>
               </tr>
 
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             distancia : inputDistancia,
             tiempoEstimado : inputTiempo,
             record : inputRecord,
-            premios : inputPremios,
+            premio : inputPremios,
             ciudad : inputCiudad
         }
            
@@ -179,14 +179,22 @@ document.addEventListener("DOMContentLoaded", ()=>{
     async function editarCarrera (event) {
       
     let id = event.target.getAttribute("data-id");
+      let distanciaEditada = document.querySelector ("#editarInput_Distancia").value
+      let tiempoEstimadoEditado = document.querySelector ("#editarInput_Tiempo").value
+      let recordEditado = document.querySelector ("#editarInput_Record").value
+      let premioEditado = document.querySelector ("#editarInput_Premios").value
+      let ciudadEditada =  document.querySelector ("#editarInput_Ciudad").value
+     
+        let carreraEditada = {
+          distancia: distanciaEditada ,
+          tiempoEstimado: tiempoEstimadoEditado,
+          record: recordEditado,
+          premio: premioEditado,
+          ciudad: ciudadEditada
+
+        }
       
-     let carreraEditada = {
-      distancia: document.querySelector ("#editarInput_Distancia").value,
-      tiempoEstimado: document.querySelector ("#editarInput_Tiempo").value,
-      record: document.querySelector ("#editarInput_Record").value,
-      premios: document.querySelector ("#editarInput_Premios").value,
-      ciudad: document.querySelector ("#editarInput_Ciudad").value
-     }
+      
      console.log(carreraEditada)
 
       try{
@@ -241,8 +249,52 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     }
 
-    let btnagregarX3 = document.querySelector(".buttonAgregar_xtres")
-    btnagregarX3.addEventListener("click", btnagregarX3)
+    let buttonAgregarTres = document.querySelector("#buttonAgregarTres");
+    buttonAgregarTres.addEventListener("click", agregarTres);
+    let posiblesCiudades = ["Tandil", "Necochea", "Loberia"," Mar del Plata"," Barker"," Bs As", "La Dulce"];
 
-   
+    async function agregarTres(){
+      let i = 0;
+      while(i < 3){
+        
+        let distancia = Math.floor(Math.random() * 100)
+        let tiempoEstimado = Math.floor(Math.random() * 600) + "min"
+        let record = Math.floor(Math.random() * 500) + "min"
+        let premios = "$" + Math.floor(Math.random() * 100000)
+        let ciudad = Math.floor(Math.random() * posiblesCiudades.length)
+
+        let carreraRandom = generarCarreraRandom(distancia, tiempoEstimado, record, premios, ciudad);
+        console.log(carreraRandom)
+        try{
+          let post = await fetch(url,{
+              'method' : 'POST',
+              'headers': {'Content-Type' : 'application/json'},
+              'body' : JSON.stringify(carreraRandom)
+              
+              });
+                  if (post.ok) {
+                  console.log(r);
+                  
+              }
+        }catch(error){
+            console.log("e");            
+        }   
+        i++;        
+        obtenerDatos();
+      }
+      
+    }
+    function generarCarreraRandom(distancia, tiempoEstimado, record, premios, ciudad){
+      return {
+        
+          "distancia": distancia,
+          "tiempoEstimado": tiempoEstimado,
+          "record": record,
+          "premio": premios,
+          "ciudad":  posiblesCiudades[ciudad]
+          }
+
+      }
+    
 })
+
